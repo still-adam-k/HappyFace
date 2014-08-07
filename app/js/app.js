@@ -10,7 +10,10 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/shareMood', {templateUrl: 'partials/share.html', controller: 'FaceController'});
+  $routeProvider.when('/feelingsList', {templateUrl: 'partials/moodList.html', controller: 'ListController'});
+  $routeProvider.otherwise({redirectTo: '/shareMood'});
 }]);
+
+
+var appControllers = angular.module('myApp.controllers', []);

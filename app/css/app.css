@@ -28,3 +28,24 @@
   content: "";
   padding: 0;
 }
+
+.separated {
+  margin: 10px;
+}
+
+#teamMembersPanel {
+  margin: 5px;
+}
+
+.text-gray {
+  color: #666666;
+}
+
+.panel {
+  padding: 20px 10px;
+}
+
+.mood-text {
+  width: 100%;
+  margin 0 auto;
+}
